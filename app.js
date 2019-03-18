@@ -2,7 +2,7 @@ const Stream = require('node-rtsp-stream');
 
 var stream = new Stream({
   name: 'name',
-  streamUrl: 'rtsp://admin:Cogadmin123@192.168.1.4/',
+  streamUrl: '<your rtsp url>',
   wsPort: 9999,
   ffmpegOptions: { // options ffmpeg flags
     '-stats': '', // an option with no neccessary value uses a blank string
