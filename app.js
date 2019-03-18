@@ -1,0 +1,12 @@
+const Stream = require('node-rtsp-stream');
+
+var stream = new Stream({
+  name: 'name',
+  streamUrl: 'rtsp://admin:Cogadmin123@192.168.1.4/',
+  wsPort: 9999,
+  ffmpegOptions: { // options ffmpeg flags
+    '-stats': '', // an option with no neccessary value uses a blank string
+    '-r': 30 // options with required values specify the value after the key
+  }
+});
+
